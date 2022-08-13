@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+img {
+    width: 300px;
+    height: 450px;
+}
+
+.perfume-image {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.perfume {
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.perfume,
+.cut-price,
+.para {
+    color: hsl(228, 12%, 48%);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    margin: auto;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.content {
+    padding: 30px;
+    font-family: "Montserrat";
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 32px;
+    color: hsl(212, 21%, 14%);
+}
+
+h2,
+.price {
+    font-family: "Fraunces";
+}
+
+.para {
+    font-size: 14px;
+    line-height: 1.2rem;
+    font-weight: 500;
+}
+
+span {
+    display: inline-block;
+}
+
+.prices {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+
+}
+
+.cut-price {
+    padding-left: 20px;
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.cart {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    padding: 11px;
+    border-radius: 7px;
+    background-color: hsl(158, 36%, 37%);
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(19, 51, 39, 1);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 11px;
+    font-family: "Montserrat";
+    color: dimgrey;
+}
+
+@media screen and (max-width: 375px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 343px;
+        height: 640px;
+    }
+
+    img {
+        width: 343px;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .perfume-image {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .para {
+        line-height: 1.5rem;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}
